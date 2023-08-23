@@ -9,8 +9,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Bullseye"
+        android:theme="@style/Theme.CustomSplashScreen"
         tools:targetApi="31">
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Bullseye" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
